@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miguel I. Puertas — PhD Candidate in Finance, University of Georgia</title>
+<meta name="description" content="Miguel I. Puertas is a PhD Candidate in Finance at the Terry College of Business, University of Georgia. Research in empirical asset pricing, market microstructure, and insider trading.">
+<meta property="og:title" content="Miguel I. Puertas — PhD Candidate in Finance">
+<meta property="og:description" content="Empirical asset pricing, market microstructure, financial intermediaries, and information asymmetry in financial markets.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#23201b;
+    --gray:#6e6a62;
+    --rule:#d9d5cc;
+    --link:#1d4272;   /* quiet academic navy */
+    --serif:'EB Garamond', Garamond, 'Palatino Linotype', Palatino, Georgia, serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:var(--serif);
+    background:#fffefb;
+    color:var(--ink);
+    font-size:19px;
+    line-height:1.65;
+  }
+  .page{max-width:680px;margin:0 auto;padding:64px 24px 88px;}
+
+  a{color:var(--link);text-decoration:underline;text-decoration-thickness:.06em;text-underline-offset:2.5px;text-decoration-color:#b9c4d4;}
+  a:hover{text-decoration-color:var(--link);}
+  a:focus-visible{outline:2px solid var(--link);outline-offset:2px;}
+
+
+  /* ---------- Nav ---------- */
+  nav{
+    position:sticky;top:0;z-index:10;
+    background:rgba(255,254,251,.95);
+    border-bottom:1px solid var(--rule);
+    backdrop-filter:blur(6px);
+  }
+  .nav-inner{
+    max-width:680px;margin:0 auto;padding:12px 24px;
+    display:flex;justify-content:center;gap:30px;flex-wrap:wrap;
+  }
+  nav a{
+    font-variant:small-caps;letter-spacing:.12em;font-size:.95rem;
+    color:var(--ink);text-decoration:none;
+  }
+  nav a:hover{color:var(--link);text-decoration:underline;text-decoration-color:var(--link);}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;}}
+  @media (max-width:520px){.nav-inner{gap:18px;padding:10px 16px;}}
+
+  /* ---------- Title-page header ---------- */
+  header{text-align:center;margin-bottom:26px;}
+  h1{
+    font-size:2.35rem;font-weight:500;letter-spacing:.01em;line-height:1.15;
+    font-variant:small-caps;
+  }
+  .subtitle{margin-top:10px;font-size:1.1rem;color:var(--gray);font-style:italic;line-height:1.55;}
+  .subtitle a{color:var(--gray);text-decoration-color:var(--rule);}
+  .subtitle a:hover{color:var(--ink);text-decoration-color:var(--gray);}
+  .citizenship{margin-top:6px;font-size:.95rem;color:var(--gray);letter-spacing:.05em;font-variant:small-caps;}
+
+  .links{margin-top:18px;font-size:1rem;}
+  .links a{margin:0 12px;}
+  .links a.cv{font-weight:600;}
+
+  .portrait{
+    width:160px;height:160px;object-fit:cover;border-radius:50%;
+    margin-top:24px;border:1px solid var(--rule);
+  }
+
+  /* signature: double rule, like a dissertation title page */
+  .double-rule{border:none;border-top:1px solid var(--ink);margin:34px auto 0;position:relative;max-width:680px;}
+  .double-rule::after{content:"";display:block;border-top:1px solid var(--ink);margin-top:3px;}
+
+  /* ---------- Intro ---------- */
+  .intro{margin:40px auto 0;max-width:60ch;}
+  .intro p{margin-bottom:12px;text-align:left;}
+
+  /* ---------- Sections ---------- */
+  section{margin-top:56px;scroll-margin-top:70px;}
+  h2{
+    font-size:1.05rem;font-weight:600;letter-spacing:.14em;
+    font-variant:small-caps;text-align:center;color:var(--ink);
+    margin-bottom:8px;
+  }
+  h2 + .sec-rule{border:none;border-top:1px solid var(--rule);width:64px;margin:0 auto 30px;}
+
+  /* ---------- Papers ---------- */
+  .paper{margin-bottom:32px;}
+  .paper:last-child{margin-bottom:0;}
+  .jmp-label{
+    display:block;text-align:left;font-size:.85rem;letter-spacing:.12em;
+    font-variant:small-caps;color:var(--link);margin-bottom:2px;font-weight:600;
+  }
+  h3{font-size:1.25rem;font-weight:600;line-height:1.35;}
+  .coauthors{font-style:italic;color:var(--gray);font-size:1.02rem;}
+  .abstract{font-size:1rem;margin-top:8px;max-width:60ch;}
+  .meta{font-size:.95rem;color:var(--gray);margin-top:6px;line-height:1.6;}
+  .meta b{font-weight:600;color:var(--ink);}
+
+  /* ---------- Entries ---------- */
+  .entry{margin-bottom:18px;}
+  .entry .title{font-weight:600;font-size:1.1rem;}
+  .entry .meta{margin-top:0;}
+
+  /* ---------- Contact ---------- */
+  .contact{text-align:center;}
+  .contact p{margin-bottom:6px;font-size:1.02rem;}
+
+  footer{
+    margin-top:72px;padding-top:22px;border-top:1px solid var(--rule);
+    text-align:center;font-size:.9rem;color:var(--gray);font-style:italic;
+  }
+
+  @media (max-width:520px){
+    body{font-size:17px;}
+    .page{padding:44px 20px 64px;}
+    h1{font-size:1.9rem;}
+    .links a{margin:0 8px;}
+  }
+</style>
+</head>
+<body>
+<nav aria-label="Site">
+  <div class="nav-inner">
+    <a href="#top">Home</a>
+    <a href="#research">Research</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#background">Background</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+<div class="page">
+
+  <header id="top">
+    <h1>Miguel I. Puertas</h1>
+    <p class="subtitle">PhD Candidate in Finance<br><a href="https://www.terry.uga.edu/directory/miguel-i-puertas/">Terry College of Business · University of Georgia</a></p>
+    <p class="citizenship">US &amp; Spanish Citizen</p>
+    <p class="links">
+      <!-- The CV button points to cv.pdf — upload your CV with that exact filename alongside this file -->
+      <a class="cv" href="cv.pdf">Curriculum Vitae</a>
+      <a href="mailto:miguel.puertas@uga.edu">Email</a>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6095414">SSRN</a>
+      <a href="https://scholar.google.com/citations?user=Lv8KdUoAAAAJ&amp;hl=en">Google Scholar</a>
+    </p>
+    <img class="portrait" src="photo.jpg" alt="Miguel I. Puertas">
+    <hr class="double-rule">
+  </header>
+
+  <div class="intro">
+    <p>I am a fourth-year Finance PhD candidate at the University of Georgia, on the 2026&ndash;27 academic job market. My research focuses on empirical asset pricing, market microstructure, financial intermediaries, valuation, and information asymmetry in financial markets.</p>
+    <p>Originally from Spain, I came to the United States in 2013 on a soccer scholarship and later competed at the semi-professional level. Before beginning my doctoral studies, I spent five years as a financial reporting analyst. I hold an MBA from the University of Southern Mississippi and an MS in Finance from the University of South Florida.</p>
+  </div>
+
+  <section id="research">
+    <h2>Research</h2>
+    <hr class="sec-rule">
+
+    <!-- When you designate your job market paper, add this line just above its title:
+    <span class="jmp-label">Job Market Paper</span>
+    -->
+
+    <div class="paper">
+      <h3>Zooming in on Insider Trading</h3>
+      <p class="coauthors">with Gregory Eaton and Andriy Shkilko</p>
+      <p class="meta"><b>Funding:</b> Business, Systems, and Technology Innovation Seed Grant, University of Georgia, 2025</p>
+    </div>
+
+    <div class="paper">
+      <h3>Fee Awareness and Brokerage Choice</h3>
+      <p class="coauthors">with Gregory Eaton and Steven Malliaris</p>
+      <p class="meta"><b>Presented at:</b> Eastern Finance Association Annual Meeting, 2026 · University of Louisville, 2025 · UGA Football Conference Early Ideas Session, 2024</p>
+    </div>
+
+    <div class="paper">
+      <h3>Looking Beyond the Bigs: What About Subsidiary and Private Targets?</h3>
+      <p class="coauthors">with Jeff Netter, Annette Poulsen, and Mike Stegemoller</p>
+      <p class="meta"><b>Presented at:</b> Eastern Finance Association Annual Meeting, 2026 · Mergers &amp; Acquisitions Research Centre Conference (MARC), 2025 · Southern Finance Association Annual Meeting, 2025</p>
+    </div>
+  </section>
+
+  <section id="presentations">
+    <h2>Paper Presentations</h2>
+    <hr class="sec-rule">
+    <div class="entry">
+      <p class="title">2027</p>
+      <p class="meta">American Finance Association (AFA) Annual Meeting (scheduled)</p>
+    </div>
+    <div class="entry">
+      <p class="title">2026</p>
+      <p class="meta">Financial Management Association (FMA) Annual Meeting (scheduled) · Eastern Finance Association (EFA) Annual Meeting (&times;2) · 7th Annual RCF-ECGI Corporate Finance and Governance Conference (scheduled) · Atlanta Finance Workshop* · The University of Auckland* · University of Georgia*</p>
+    </div>
+    <div class="entry">
+      <p class="title">2025</p>
+      <p class="meta">Annual Mergers &amp; Acquisitions Research Centre Conference (MARC)* · Southern Finance Association (SFA) Annual Meeting · University of Louisville*</p>
+    </div>
+    <div class="entry">
+      <p class="title">2024</p>
+      <p class="meta">UGA Football Conference Early Ideas Session*</p>
+    </div>
+    <p class="meta" style="margin-top:14px;"><i>* indicates presentations by coauthors</i></p>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <hr class="sec-rule">
+    <div class="entry">
+      <p class="title">Instructor of Record &mdash; University of Georgia</p>
+      <p class="meta">Behavioral Finance (upper-level undergraduate) · Fall 2023</p>
+      <p class="meta">Investment Management (upper-level undergraduate) · Spring 2025</p>
+      <p class="meta">Financial Management (undergraduate, online) · Summer 2025 &amp; 2026</p>
+    </div>
+    <div class="entry">
+      <p class="title">Teaching Assistant &mdash; University of Georgia</p>
+      <p class="meta">PhD Course: Empirical Research in Investments (Prof. Zhongjin (Gene) Lu) · Fall 2024</p>
+      <p class="meta">MBA Course: Financial Management (Prof. Annette B. Poulsen) · Fall 2025</p>
+      <p class="meta">Undergraduate Course: Capitalism (Prof. Jeffry M. Netter) · Fall 2025</p>
+    </div>
+  </section>
+
+  <section id="background">
+    <h2>Experience &amp; Education</h2>
+    <hr class="sec-rule">
+    <div class="entry">
+      <p class="title">Wise PLC</p>
+      <p class="meta">Operations and Financial Reporting Analyst · 2017&ndash;2022 · Tampa, FL</p>
+    </div>
+    <div class="entry" style="margin-top:28px;">
+      <p class="title">University of Georgia</p>
+      <p class="meta">PhD Candidate in Finance · Aug 2022 &ndash; May 2027 (expected) · Athens, GA</p>
+    </div>
+    <div class="entry">
+      <p class="title">University of South Florida</p>
+      <p class="meta">Master of Science in Finance · May 2022 · Tampa, FL</p>
+    </div>
+    <div class="entry">
+      <p class="title">The University of Southern Mississippi</p>
+      <p class="meta">MBA · Aug 2017 · Graduate Student Researcher, Department of Finance · Hattiesburg, MS</p>
+    </div>
+  </section>
+
+  <section id="awards">
+    <h2>Awards &amp; Honors</h2>
+    <hr class="sec-rule">
+    <div class="entry">
+      <p class="title">Business, Systems, and Technology Innovation Seed Grant</p>
+      <p class="meta">University of Georgia · 2025 · for &ldquo;Zooming in on Insider Trading,&rdquo; with Gregory Eaton and Andriy Shkilko</p>
+    </div>
+    <div class="entry">
+      <p class="title">Excellence in Teaching Award Nominee</p>
+      <p class="meta">University of Georgia · 2025</p>
+    </div>
+    <div class="entry">
+      <p class="title">Outstanding Teaching Assistant</p>
+      <p class="meta">University of Georgia · 2024</p>
+    </div>
+    <div class="entry">
+      <p class="title">Graduate Student Assistantship</p>
+      <p class="meta">The University of Southern Mississippi · 2017</p>
+    </div>
+    <div class="entry">
+      <p class="title">Outstanding Finance Student</p>
+      <p class="meta">William Carey University · 2016</p>
+    </div>
+    <div class="entry">
+      <p class="title">NAIA Scholar-Athlete</p>
+      <p class="meta">William Carey University Soccer Varsity Team · 2016</p>
+    </div>
+    <div class="entry">
+      <p class="title">Soccer Scholarship (NAIA)</p>
+      <p class="meta">William Carey University · 2013&ndash;2016</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <hr class="sec-rule">
+    <p><a href="mailto:miguel.puertas@uga.edu">miguel.puertas@uga.edu</a></p>
+    <p>B360 Amos Hall · Terry College of Business · Athens, GA 30602</p>
+  </section>
+
+  <footer>© 2026 Miguel I. Puertas · Last updated July 2026</footer>
+
+</div>
+</body>
+</html>
