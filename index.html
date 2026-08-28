@@ -94,6 +94,14 @@
   h2 + .sec-rule{border:none;border-top:1px solid var(--rule);width:64px;margin:0 auto 30px;}
 
   /* ---------- Papers ---------- */
+  .subsec{
+    font-size:.95rem;font-weight:600;letter-spacing:.14em;
+    font-variant:small-caps;color:var(--gray);
+    margin:38px 0 20px;
+    display:flex;align-items:center;gap:14px;
+  }
+  .subsec::after{content:"";flex:1;border-top:1px solid var(--rule);}
+  section .subsec:first-of-type{margin-top:0;}
   .paper{margin-bottom:32px;}
   .paper:last-child{margin-bottom:0;}
   .jmp-label{
@@ -137,6 +145,7 @@
     <a href="#teaching">Teaching</a>
     <a href="#background">Background</a>
     <a href="#awards">Awards</a>
+    <a href="#personal">Personal</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -147,8 +156,6 @@
     <p class="subtitle">PhD Candidate in Finance<br><a href="https://www.terry.uga.edu/directory/miguel-i-puertas/">Terry College of Business · University of Georgia</a></p>
     <p class="citizenship">U.S. Citizen</p>
     <p class="links">
-      <!-- The CV button points to cv.pdf — upload your CV with that exact filename alongside this file -->
-      <a class="cv" href="cv.pdf">Curriculum Vitae</a>
       <a href="mailto:miguel.puertas@uga.edu">Email</a>
       <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=6095414">SSRN</a>
       <a href="https://scholar.google.com/citations?user=Lv8KdUoAAAAJ&amp;hl=en">Google Scholar</a>
@@ -166,14 +173,14 @@
     <h2>Research</h2>
     <hr class="sec-rule">
 
-    <!-- When you designate your job market paper, add this line just above its title:
-    <span class="jmp-label">Job Market Paper</span>
-    -->
+
+    <p class="subsec">Working Papers</p>
 
     <div class="paper">
-      <h3>Zooming in on Insider Trading</h3>
-      <p class="coauthors">with Gregory Eaton and Andriy Shkilko</p>
-      <p class="meta"><b>Grant Awarded:</b> $19,500 &mdash; Business, Systems, and Technology Innovation Seed Grant, University of Georgia, 2025</p>
+      <span class="jmp-label">Job Market Paper</span>
+      <h3>Insider Alpha: Evidence from Private Foundation Portfolios</h3>
+      <p class="coauthors">with Zhongjin Lu</p>
+      <p class="meta"><b>Presented at:</b> American Finance Association (AFA) Annual Meeting, 2027 (scheduled) · Financial Management Association (FMA) Annual Meeting, 2026 (scheduled) · University of Auckland · Atlanta Finance Workshop · University of Georgia</p>
     </div>
 
     <div class="paper">
@@ -187,6 +194,30 @@
       <p class="coauthors">with Jeff Netter, Annette Poulsen, and Mike Stegemoller</p>
       <p class="meta"><b>Presented at:</b> Eastern Finance Association Annual Meeting, 2026 · Mergers &amp; Acquisitions Research Centre Conference (MARC), 2025 · Southern Finance Association Annual Meeting, 2025</p>
     </div>
+
+    <div class="paper">
+      <h3>Information Asymmetry Among Investors</h3>
+      <p class="coauthors">with Harrison Ham and Corbin Fox</p>
+      <p class="meta"><b>Presented at:</b> Clemson University, 2026</p>
+    </div>
+
+    <p class="subsec">Work in Progress</p>
+
+    <div class="paper">
+      <h3>Zooming in on Insider Trading</h3>
+      <p class="coauthors">with Gregory Eaton and Andriy Shkilko</p>
+      <p class="meta"><b>Grant:</b> Business, Systems, and Technology Innovation Seed Grant ($19,500), University of Georgia, 2025</p>
+    </div>
+
+    <div class="paper">
+      <h3>Insider Trading and the Information Environment</h3>
+      <p class="coauthors">with Anthony Waikel</p>
+    </div>
+
+    <div class="paper">
+      <h3>Repurchase Pressure in Interval Funds</h3>
+      <p class="coauthors">sole author</p>
+    </div>
   </section>
 
   <section id="presentations">
@@ -198,7 +229,7 @@
     </div>
     <div class="entry">
       <p class="title">2026</p>
-      <p class="meta">Financial Management Association (FMA) Annual Meeting (scheduled) · Eastern Finance Association (EFA) Annual Meeting (&times;2) · 7th Annual RCF-ECGI Corporate Finance and Governance Conference (scheduled) · Atlanta Finance Workshop* · The University of Auckland* · University of Georgia*</p>
+      <p class="meta">Financial Management Association (FMA) Annual Meeting (scheduled) · Eastern Finance Association (EFA) Annual Meeting (&times;2) · 7th Annual RCF-ECGI Corporate Finance and Governance Conference (scheduled) · Atlanta Finance Workshop* · The University of Auckland* · Clemson University* · University of Georgia*</p>
     </div>
     <div class="entry">
       <p class="title">2025</p>
@@ -225,17 +256,22 @@
       <p class="meta">PhD Course: Empirical Research in Investments (Prof. Zhongjin (Gene) Lu) · Fall 2024</p>
       <p class="meta">MBA Course: Financial Management (Prof. Annette B. Poulsen) · Fall 2025</p>
       <p class="meta">Undergraduate Course: Capitalism (Prof. Jeffry M. Netter) · Fall 2025</p>
+      <p class="meta">Undergraduate Course: Applied Corporate Finance (Prof. Xu (Ethan) Tian) · Spring 2026</p>
     </div>
   </section>
 
   <section id="background">
-    <h2>Experience &amp; Education</h2>
+    <h2>Industry Experience &amp; Education</h2>
     <hr class="sec-rule">
+
+    <p class="subsec">Industry Experience</p>
     <div class="entry">
       <p class="title">Wise PLC</p>
       <p class="meta">Financial Reporting Analyst · 2017&ndash;2022 · Tampa, FL</p>
     </div>
-    <div class="entry" style="margin-top:28px;">
+
+    <p class="subsec">Education</p>
+    <div class="entry">
       <p class="title">University of Georgia</p>
       <p class="meta">PhD Candidate in Finance · Aug 2022 &ndash; May 2027 (expected) · Athens, GA</p>
     </div>
@@ -282,12 +318,25 @@
     </div>
   </section>
 
+  <section id="personal">
+    <h2>Background &amp; Personal</h2>
+    <hr class="sec-rule">
+    <div class="entry">
+      <p class="meta">Former semi-professional soccer player (Wisconsin)</p>
+      <p class="meta">Youth professional soccer player (Madrid, Spain)</p>
+      <p class="meta">Alto saxophone player since age 12</p>
+      <p class="meta"><b>Languages:</b> Spanish (native) · English (fluent)</p>
+      <p class="meta"><b>Dual Citizenship:</b> United States and Spain</p>
+    </div>
+  </section>
+
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <hr class="sec-rule">
     <p><a href="mailto:miguel.puertas@uga.edu">miguel.puertas@uga.edu</a></p>
     <p>B360 Amos Hall · Terry College of Business · Athens, GA 30602</p>
   </section>
+
 
   <footer>© 2026 Miguel I. Puertas · Last updated August 2026</footer>
 
