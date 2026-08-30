@@ -119,6 +119,19 @@
   h3{font-size:1.25rem;font-weight:600;line-height:1.35;}
   .coauthors{font-style:italic;color:var(--gray);font-size:1.02rem;}
   .abstract{font-size:1rem;margin-top:8px;max-width:60ch;}
+
+  /* expandable abstract */
+  details.abs{margin-top:6px;display:block;width:100%;}
+  details.abs summary{
+    cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px;
+    font-size:.85rem;letter-spacing:.12em;font-variant:small-caps;font-weight:600;
+    color:var(--link);
+  }
+  details.abs summary::-webkit-details-marker{display:none;}
+  details.abs summary::before{content:"+";font-weight:500;transition:transform .15s ease;}
+  details.abs[open] summary::before{content:"−";}
+  details.abs summary:hover{text-decoration:underline;text-decoration-color:#b9c4d4;text-underline-offset:2.5px;}
+  details.abs .abstract{margin-top:6px;color:var(--ink);max-width:none;width:100%;text-align:justify;hyphens:auto;}
   .meta{font-size:.95rem;color:var(--gray);margin-top:6px;line-height:1.6;}
   .meta b{font-weight:600;color:var(--ink);}
 
@@ -185,27 +198,32 @@
     <p class="subsec">Working Papers</p>
 
     <div class="paper">
-      <span class="jmp-label">Job Market Paper</span>
-      <h3>Insider Alpha: Evidence from Private Foundation Portfolios</h3>
-      <p class="coauthors">with Zhongjin Lu</p>
-      <p class="meta"><b>Presented at:</b> American Finance Association (AFA) Annual Meeting, 2027 (scheduled) · Financial Management Association (FMA) Annual Meeting, 2026 (scheduled) · University of Auckland · Atlanta Finance Workshop · University of Georgia</p>
-    </div>
-
-    <div class="paper">
       <h3>Cumulative Fee Neglect and Brokerage Choice</h3>
       <p class="coauthors">with Gregory Eaton and Steven Malliaris</p>
+      <details class="abs">
+        <summary>Abstract</summary>
+        <p class="abstract">Full-service brokers manage more than $10 trillion of retail assets while charging substantially higher fees than many alternative brokerage options. Although these fees are increasingly transparent, disclosures typically present fees in annual terms. We investigate whether investors struggle to process the cumulative effects of annual fees on long-term wealth. Using survey experiments with full-service brokerage clients, we document that investors are poorly calibrated about fee levels, become more fee-sensitive when cumulative wealth effects are made explicit, and increasingly misjudge fees as horizons lengthen. Our results suggest investors underestimate how annual fees translate to lifetime costs.</p>
+      </details>
       <p class="meta"><b>Presented at:</b> Eastern Finance Association Annual Meeting, 2026 · University of Louisville, 2025 · UGA Football Conference Early Ideas Session, 2024</p>
     </div>
 
     <div class="paper">
       <h3>Looking Beyond the Bigs: What About Subsidiary and Private Targets?</h3>
       <p class="coauthors">with Jeff Netter, Annette Poulsen, and Mike Stegemoller</p>
+      <details class="abs">
+        <summary>Abstract</summary>
+        <p class="abstract">We analyze a comprehensive set of mergers and acquisitions identified from SDC data spanning 1992 to 2023. Our dataset includes many mergers typically excluded from large-scale analyses due to factors such as the private status of the target or acquirer and the size of the transaction. After reviewing the impact of sample selection criteria on the analysis of merger characteristics, we use our extended sample to examine the differential returns to acquirers of public and private targets and, specifically, to analyze transactions involving public and private acquisition of subsidiary targets. We first consider the importance of synergy between acquirer and target parent and the target subsidiary itself, finding that the party with more knowledge about the subsidiary industry tends to have greater wealth gains. However, we also note the impact of data restrictions on our analysis. Further analysis of subsidiary transactions reveals that both financial-industry target parents and acquirers are underrepresented in the data-limited sample. Our continuing research focuses on identifying additional means to evaluate the importance of synergy in these transactions.</p>
+      </details>
       <p class="meta"><b>Presented at:</b> 7th Annual RCF-ECGI Corporate Finance and Governance Conference, 2026 (scheduled) · Eastern Finance Association Annual Meeting, 2026 · Mergers &amp; Acquisitions Research Centre Conference (MARC), 2025 · Southern Finance Association Annual Meeting, 2025</p>
     </div>
 
     <div class="paper">
       <h3>Information Asymmetry Among Investors</h3>
       <p class="coauthors">with Harrison Ham and Corbin Fox</p>
+      <details class="abs">
+        <summary>Abstract</summary>
+        <p class="abstract">Prevalent measures of information asymmetry in finance either quantify causes of asymmetry between corporate insiders and outsiders, or proxy for asymmetry using market outcomes. In contrast, we introduce a novel measure, the InfoGap, to quantify the asymmetry between outside investors, distinct from the traditional information asymmetry between insiders and outsiders. Using social media data, we develop a methodology to directly extract information asymmetry signals. We show that when the InfoGap is high, uninformed investors incorporate less hard-to-process information into their beliefs, consistent with increased investor-level information asymmetry. Finally, we show that higher investor-level information asymmetry is associated with a deterioration in market quality, consistent with sophisticated investors attempting to capitalize on their superior information. In contrast, the market deterioration associated with traditional measures of firm-level asymmetry is largely driven by market withdrawal, consistent with sophisticated investors avoiding markets where they are at an informational disadvantage.</p>
+      </details>
       <p class="meta"><b>Presented at:</b> Clemson University, 2026</p>
     </div>
 
@@ -220,11 +238,6 @@
     <div class="paper">
       <h3>Insider Trading and the Information Environment</h3>
       <p class="coauthors">with Anthony Waikel</p>
-    </div>
-
-    <div class="paper">
-      <h3>Repurchase Pressure in Interval Funds</h3>
-      <p class="coauthors">sole author</p>
     </div>
   </section>
 
@@ -255,9 +268,10 @@
     <hr class="sec-rule">
     <div class="entry">
       <p class="title">Instructor of Record &mdash; University of Georgia</p>
-      <p class="meta">Behavioral Finance (upper-level undergraduate) · Fall 2023</p>
-      <p class="meta">Investment Management (upper-level undergraduate) · Spring 2025</p>
-      <p class="meta">Financial Management (undergraduate, online) · Summer 2025 &amp; 2026</p>
+      <p class="meta">Investment Management (upper-level undergraduate) · Spring 2025 · Instructor rating: 4.84&thinsp;/&thinsp;5.00*</p>
+      <p class="meta">Behavioral Finance (upper-level undergraduate) · Fall 2023 · Instructor rating: 4.81&thinsp;/&thinsp;5.00*</p>
+      <p class="meta">Financial Management (undergraduate, online) · Summer 2025 &amp; 2026&dagger;</p>
+      <p class="meta" style="margin-top:10px;font-size:.88rem;"><i>* Mean response to &ldquo;Overall, the instructor was effective at teaching the subject matter.&rdquo;<br>&dagger; Asynchronous online section taught using course materials, lecture videos, and assessments developed by the senior course coordinator.</i></p>
     </div>
     <div class="entry">
       <p class="title">Teaching Assistant &mdash; University of Georgia</p>
@@ -342,7 +356,8 @@
     <h2>Contact</h2>
     <hr class="sec-rule">
     <p><a href="mailto:miguel.puertas@uga.edu">miguel.puertas@uga.edu</a></p>
-    <p>B360 Amos Hall · Terry College of Business · Athens, GA 30602</p>
+    <p><a href="tel:+16019139559">(601) 913-9559</a></p>
+    <p>E312 Ivester Hall · Terry College of Business · Athens, GA 30602</p>
   </section>
 
 
