@@ -34,10 +34,10 @@
     font-family:var(--serif);
     background:#fffefb;
     color:var(--ink);
-    font-size:19px;
-    line-height:1.65;
+    font-size:17px;
+    line-height:1.6;
   }
-  .page{max-width:680px;margin:0 auto;padding:64px 24px 88px;}
+  .page{max-width:680px;margin:0 auto;padding:56px 24px 80px;}
 
   a{color:var(--link);text-decoration:underline;text-decoration-thickness:.06em;text-underline-offset:2.5px;text-decoration-color:#b9c4d4;}
   a:hover{text-decoration-color:var(--link);}
@@ -67,20 +67,20 @@
   /* ---------- Title-page header ---------- */
   header{text-align:center;margin-bottom:26px;}
   h1{
-    font-size:2.35rem;font-weight:500;letter-spacing:.01em;line-height:1.15;
+    font-size:2rem;font-weight:500;letter-spacing:.01em;line-height:1.15;
     font-variant:small-caps;
   }
-  .subtitle{margin-top:10px;font-size:1.1rem;color:var(--gray);font-style:italic;line-height:1.55;}
+  .subtitle{margin-top:8px;font-size:1.02rem;color:var(--gray);font-style:italic;line-height:1.55;}
   .subtitle a{color:var(--gray);text-decoration-color:var(--rule);}
   .subtitle a:hover{color:var(--ink);text-decoration-color:var(--gray);}
-  .citizenship{margin-top:8px;font-size:1rem;color:var(--ink);letter-spacing:.05em;font-variant:small-caps;font-weight:600;}
+  .citizenship{margin-top:8px;font-size:.92rem;color:var(--ink);letter-spacing:.05em;font-variant:small-caps;font-weight:600;}
 
-  .links{margin-top:18px;font-size:1rem;}
+  .links{margin-top:16px;font-size:.95rem;}
   .links a{margin:0 12px;}
   .links a.cv{font-weight:600;}
 
   .portrait{
-    width:160px;height:160px;object-fit:cover;border-radius:50%;
+    width:140px;height:140px;object-fit:cover;border-radius:50%;
     margin-top:24px;border:1px solid var(--rule);
   }
 
@@ -89,13 +89,13 @@
   .double-rule::after{content:"";display:block;border-top:1px solid var(--ink);margin-top:3px;}
 
   /* ---------- Intro ---------- */
-  .intro{margin:40px auto 0;max-width:60ch;}
+  .intro{margin:36px auto 0;max-width:62ch;}
   .intro p{margin-bottom:12px;text-align:left;}
 
   /* ---------- Sections ---------- */
-  section{margin-top:56px;scroll-margin-top:70px;}
+  section{margin-top:48px;scroll-margin-top:70px;}
   h2{
-    font-size:1.05rem;font-weight:600;letter-spacing:.14em;
+    font-size:1rem;font-weight:600;letter-spacing:.14em;
     font-variant:small-caps;text-align:center;color:var(--ink);
     margin-bottom:8px;
   }
@@ -105,20 +105,20 @@
   .subsec{
     font-size:.95rem;font-weight:600;letter-spacing:.14em;
     font-variant:small-caps;color:var(--gray);
-    margin:38px 0 20px;
+    margin:32px 0 16px;
     display:flex;align-items:center;gap:14px;
   }
   .subsec::after{content:"";flex:1;border-top:1px solid var(--rule);}
   section .subsec:first-of-type{margin-top:0;}
-  .paper{margin-bottom:32px;}
+  .paper{margin-bottom:26px;}
   .paper:last-child{margin-bottom:0;}
   .jmp-label{
     display:block;text-align:left;font-size:.85rem;letter-spacing:.12em;
     font-variant:small-caps;color:var(--link);margin-bottom:2px;font-weight:600;
   }
-  h3{font-size:1.25rem;font-weight:600;line-height:1.35;}
-  .coauthors{font-style:italic;color:var(--gray);font-size:1.02rem;}
-  .abstract{font-size:1rem;margin-top:8px;max-width:60ch;}
+  h3{font-size:1.12rem;font-weight:600;line-height:1.35;}
+  .coauthors{font-style:italic;color:var(--gray);font-size:.98rem;}
+  .abstract{font-size:.95rem;margin-top:8px;max-width:60ch;}
 
   /* expandable abstract */
   details.abs{margin-top:6px;display:block;width:100%;}
@@ -132,17 +132,20 @@
   details.abs[open] summary::before{content:"−";}
   details.abs summary:hover{text-decoration:underline;text-decoration-color:#b9c4d4;text-underline-offset:2.5px;}
   details.abs .abstract{margin-top:6px;color:var(--ink);max-width:none;width:100%;text-align:justify;hyphens:auto;}
-  .meta{font-size:.95rem;color:var(--gray);margin-top:6px;line-height:1.6;}
+  .meta{font-size:.92rem;color:var(--gray);margin-top:5px;line-height:1.55;}
   .meta b{font-weight:600;color:var(--ink);}
+  ul.venues{list-style:none;margin-top:6px;padding-left:1.4em;font-size:.92rem;color:var(--gray);line-height:1.55;}
+  ul.venues li{position:relative;}
+  ul.venues li::before{content:"\2013";position:absolute;left:-1.1em;}
 
   /* ---------- Entries ---------- */
-  .entry{margin-bottom:18px;}
-  .entry .title{font-weight:600;font-size:1.1rem;}
+  .entry{margin-bottom:16px;}
+  .entry .title{font-weight:600;font-size:1.02rem;}
   .entry .meta{margin-top:0;}
 
   /* ---------- Contact ---------- */
   .contact{text-align:center;}
-  .contact p{margin-bottom:6px;font-size:1.02rem;}
+  .contact p{margin-bottom:6px;font-size:.98rem;}
 
   footer{
     margin-top:72px;padding-top:22px;border-top:1px solid var(--rule);
@@ -150,9 +153,9 @@
   }
 
   @media (max-width:520px){
-    body{font-size:17px;}
-    .page{padding:44px 20px 64px;}
-    h1{font-size:1.9rem;}
+    body{font-size:16px;}
+    .page{padding:40px 20px 60px;}
+    h1{font-size:1.7rem;}
     .links a{margin:0 8px;}
   }
 </style>
@@ -211,7 +214,10 @@ related investments predict alpha whereas unrelated investments do not, and alph
 after founders retire. These findings challenge the view that alternative alpha is available to
 investors with sufficient capital and patience.</p>
       </details>
-      <p class="meta"><b>Presented at:</b> American Finance Association (AFA) Annual Meeting, 2027 (scheduled) · Financial Management Annual Meeting (FMA) 2026 (scheduled)</p>
+      <ul class="venues">
+        <li>American Finance Association (AFA) Annual Meeting, 2027 (scheduled)</li>
+        <li>Financial Management Association (FMA) Annual Meeting, 2026 (scheduled)</li>
+      </ul>
     </div>
 
     
@@ -223,7 +229,9 @@ investors with sufficient capital and patience.</p>
         <summary>Abstract</summary>
         <p class="abstract">Full-service brokers manage more than $10 trillion of retail assets while charging substantially higher fees than many alternative brokerage options. Although these fees are increasingly transparent, disclosures typically present fees in annual terms. We investigate whether investors struggle to process the cumulative effects of annual fees on long-term wealth. Using survey experiments with full-service brokerage clients, we document that investors are poorly calibrated about fee levels, become more fee-sensitive when cumulative wealth effects are made explicit, and increasingly misjudge fees as horizons lengthen. Our results suggest investors underestimate how annual fees translate to lifetime costs.</p>
       </details>
-      <p class="meta"><b>Presented at:</b> Eastern Finance Association Annual Meeting, 2026 · University of Louisville, 2025 · UGA Football Conference Early Ideas Session, 2024</p>
+      <ul class="venues">
+        <li>Eastern Finance Association (EFA) Annual Meeting, 2026</li>
+      </ul>
     </div>
 
     <div class="paper">
@@ -233,7 +241,10 @@ investors with sufficient capital and patience.</p>
         <summary>Abstract</summary>
         <p class="abstract">We analyze a comprehensive set of mergers and acquisitions identified from SDC data spanning 1992 to 2023. Our dataset includes many mergers typically excluded from large-scale analyses due to factors such as the private status of the target or acquirer and the size of the transaction. After reviewing the impact of sample selection criteria on the analysis of merger characteristics, we use our extended sample to examine the differential returns to acquirers of public and private targets and, specifically, to analyze transactions involving public and private acquisition of subsidiary targets. We first consider the importance of synergy between acquirer and target parent and the target subsidiary itself, finding that the party with more knowledge about the subsidiary industry tends to have greater wealth gains. However, we also note the impact of data restrictions on our analysis. Further analysis of subsidiary transactions reveals that both financial-industry target parents and acquirers are underrepresented in the data-limited sample. Our continuing research focuses on identifying additional means to evaluate the importance of synergy in these transactions.</p>
       </details>
-      <p class="meta"><b>Presented at:</b> 7th Annual RCF-ECGI Corporate Finance and Governance Conference, 2026 (scheduled) · Eastern Finance Association Annual Meeting, 2026 · Mergers &amp; Acquisitions Research Centre Conference (MARC), 2025 · Southern Finance Association Annual Meeting, 2025</p>
+      <ul class="venues">
+        <li>RCF-ECGI Corporate Finance and Governance Conference, 2026 (scheduled)</li>
+        <li>Mergers &amp; Acquisitions Research Centre Conference (MARC), 2025</li>
+      </ul>
     </div>
 
     <div class="paper">
@@ -243,7 +254,9 @@ investors with sufficient capital and patience.</p>
         <summary>Abstract</summary>
         <p class="abstract">Prevalent measures of information asymmetry in finance either quantify causes of asymmetry between corporate insiders and outsiders, or proxy for asymmetry using market outcomes. In contrast, we introduce a novel measure, the InfoGap, to quantify the asymmetry between outside investors, distinct from the traditional information asymmetry between insiders and outsiders. Using social media data, we develop a methodology to directly extract information asymmetry signals. We show that when the InfoGap is high, uninformed investors incorporate less hard-to-process information into their beliefs, consistent with increased investor-level information asymmetry. Finally, we show that higher investor-level information asymmetry is associated with a deterioration in market quality, consistent with sophisticated investors attempting to capitalize on their superior information. In contrast, the market deterioration associated with traditional measures of firm-level asymmetry is largely driven by market withdrawal, consistent with sophisticated investors avoiding markets where they are at an informational disadvantage.</p>
       </details>
-      <p class="meta"><b>Presented at:</b> Clemson University, 2026</p>
+      <ul class="venues">
+        <li>Clemson University (Brownbag), 2026</li>
+      </ul>
     </div>
 
     <p class="subsec">Work in Progress</p>
@@ -257,18 +270,22 @@ investors with sufficient capital and patience.</p>
     <div class="paper">
       <h3>Repurchase Pressure in Interval Funds</h3>
       <p class="coauthors">sole-authored</p>
-      <p class="meta"><b>Presented at:</b> Financial Management Association (FMA) New Ideas Session, 2026 (scheduled)</p>
+      <ul class="venues">
+        <li>Financial Management Association (FMA) New Ideas Session, 2026 (scheduled)</li>
+      </ul>
     </div>
 
     <div class="paper">
       <h3>Talking Before Trading</h3>
       <p class="coauthors">with Anthony Waikel</p>
-       <p class="meta"><b>Presented at:</b> Financial Management Association (FMA) New Ideas Session, 2026 (scheduled)</p>
+       <ul class="venues">
+        <li>Financial Management Association (FMA) New Ideas Session, 2026 (scheduled)</li>
+      </ul>
     </div>
   </section>
 
   <section id="presentations">
-    <h2>Paper Presentations</h2>
+    <h2>Conference and Seminar Presentations</h2>
     <hr class="sec-rule">
     <div class="entry">
       <p class="title">2027</p>
@@ -276,7 +293,7 @@ investors with sufficient capital and patience.</p>
     </div>
     <div class="entry">
       <p class="title">2026</p>
-      <p class="meta">Financial Management Association (FMA) Annual Meeting (scheduled) · Eastern Finance Association (EFA) Annual Meeting (&times;2) · 7th Annual RCF-ECGI Corporate Finance and Governance Conference (scheduled) · Atlanta Finance Workshop* · The University of Auckland* · Clemson University* · University of Georgia*</p>
+      <p class="meta">Financial Management Association (FMA) Annual Meeting (scheduled) · FMA New Ideas Session (&times;2, scheduled) · Eastern Finance Association (EFA) Annual Meeting (&times;2) · 7th Annual RCF-ECGI Corporate Finance and Governance Conference (scheduled) · Atlanta Finance Workshop* · The University of Auckland* · Clemson University* · University of Georgia*</p>
     </div>
     <div class="entry">
       <p class="title">2025</p>
@@ -304,7 +321,7 @@ investors with sufficient capital and patience.</p>
       <p class="meta">PhD Course: Empirical Research in Investments (Prof. Zhongjin (Gene) Lu) · Fall 2024</p>
       <p class="meta">MBA Course: Financial Management (Prof. Annette B. Poulsen) · Fall 2025</p>
       <p class="meta">Undergraduate Course: Capitalism (Prof. Jeffry M. Netter) · Fall 2025</p>
-      <p class="meta">Undergraduate Course: Applied Corporate Finance (Prof. Xu (Ethan) Tian) · Spring 2026</p>
+      <p class="meta">Undergraduate Course: Applied Corporate Finance (Prof. Xu (Ethan) Tian) · Spring 2024 &amp; 2026</p>
     </div>
   </section>
 
@@ -387,7 +404,7 @@ investors with sufficient capital and patience.</p>
   </section>
 
 
-  <footer>© 2026 Miguel I. Puertas · Last updated August 2026</footer>
+  <footer>© 2026 Miguel I. Puertas · Last updated September 2026</footer>
 
 </div>
 
